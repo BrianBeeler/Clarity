@@ -6,15 +6,15 @@ angular.module('checkout', [
   $urlRouterProvider.otherwise("/")
   
   $stateProvider
-    // .state("home", {
-    //    url: "/",
-    //    templateUrl: "../index.html",
-    //    controller: "HomeController"
-    // })
-    .state("shopping-cart.js", {
-      url: '/',
+    .state("/", {
+      url: "/",
+      templateUrl: "/app/states/dummy/dummy.html",
+      constroller: "Main"
+    })
+    .state("shopping-cart", {
+      url: '/shopping-cart',
       templateUrl: "/app/states/shopping-cart/shopping-cart.html",
-      controller: "ShoppingCart"
+      controller: "ShoppingCart",
     })
     .state('payment-interface', {
       url: '/payment-interface',
@@ -22,4 +22,4 @@ angular.module('checkout', [
       controller: "PaymentInterface",
     })
 })
-console.log("Ran!")
+console.log()
