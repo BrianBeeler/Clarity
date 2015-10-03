@@ -14,12 +14,12 @@ angular.module('checkout', [
     .state("shopping-cart", {
       url: '/shopping-cart',
       templateUrl: "/app/states/shopping-cart/shopping-cart.html",
-      controller: "ShoppingCart",
+      //controller: "ShoppingCart",
     })
     .state('payment-interface', {
       url: '/payment-interface',
       templateUrl: "/app/states/payment-interface/payment-interface.html",
-      controller: "PaymentInterface",
+      //controller: "PaymentInterface2",
     })
 })
 console.log()

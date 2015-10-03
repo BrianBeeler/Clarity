@@ -1,5 +1,5 @@
 angular.module("checkout")
 
-.controller("PaymentInterface", function(){
+.controller("PaymentInterface2", function(){
   console.log("payment interface ran!")
 })
